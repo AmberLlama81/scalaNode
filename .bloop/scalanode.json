@@ -2,13 +2,13 @@
     "version": "1.4.0",
     "project": {
         "name": "scalanode",
-        "directory": "/Users/nathanhuh/Documents/scalaNode",
-        "workspaceDir": "/Users/nathanhuh/Documents/scalaNode",
+        "directory": "/Users/nathanhuh/Documents/Personal Projects/scalaNode",
+        "workspaceDir": "/Users/nathanhuh/Documents/Personal Projects/scalaNode",
         "sources": [
-            "/Users/nathanhuh/Documents/scalaNode/src/main/scala",
-            "/Users/nathanhuh/Documents/scalaNode/src/main/scala-3",
-            "/Users/nathanhuh/Documents/scalaNode/src/main/java",
-            "/Users/nathanhuh/Documents/scalaNode/target/scala-3.1.2/src_managed/main"
+            "/Users/nathanhuh/Documents/Personal Projects/scalaNode/src/main/scala",
+            "/Users/nathanhuh/Documents/Personal Projects/scalaNode/src/main/scala-3",
+            "/Users/nathanhuh/Documents/Personal Projects/scalaNode/src/main/java",
+            "/Users/nathanhuh/Documents/Personal Projects/scalaNode/target/scala-3.1.2/src_managed/main"
         ],
         "dependencies": [
             
@@ -28,11 +28,11 @@
             "/Users/nathanhuh/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_sjs1_3/0.2.8/sourcecode_sjs1_3-0.2.8.jar",
             "/Users/nathanhuh/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs1_3/2.0.0/scalajs-dom_sjs1_3-2.0.0.jar"
         ],
-        "out": "/Users/nathanhuh/Documents/scalaNode/.bloop/scalanode",
-        "classesDir": "/Users/nathanhuh/Documents/scalaNode/.bloop/scalanode/scala-3/classes",
+        "out": "/Users/nathanhuh/Documents/Personal Projects/scalaNode/.bloop/scalanode",
+        "classesDir": "/Users/nathanhuh/Documents/Personal Projects/scalaNode/.bloop/scalanode/scala-3/classes",
         "resources": [
-            "/Users/nathanhuh/Documents/scalaNode/src/main/resources",
-            "/Users/nathanhuh/Documents/scalaNode/target/scala-3.1.2/resource_managed/main"
+            "/Users/nathanhuh/Documents/Personal Projects/scalaNode/src/main/resources",
+            "/Users/nathanhuh/Documents/Personal Projects/scalaNode/target/scala-3.1.2/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",

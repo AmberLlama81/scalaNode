@@ -7621,3 +7621,56 @@ I could not infer the type of the parameter r.
 2022.04.28 19:40:00 INFO  time: compiled scalanode in 0.27s
 Apr 28, 2022 7:47:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Apr 28, 2022 7:49:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.04.28 19:49:56 INFO  shutting down Metals
+2022.04.28 19:49:56 INFO  Shut down connection with build server.
+2022.04.28 19:49:56 INFO  Shut down connection with build server.
+2022.04.28 19:49:56 INFO  Shut down connection with build server.
+2022.05.02 19:07:08 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/nathanhuh/Documents/Personal Projects/scalaNode/.metals/lsp.trace.json or /Users/nathanhuh/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.05.02 19:07:09 INFO  logging to file /Users/nathanhuh/Documents/Personal Projects/scalaNode/.metals/metals.log
+2022.05.02 19:07:09 INFO  Started: Metals version 0.11.5 in workspace '/Users/nathanhuh/Documents/Personal Projects/scalaNode' for client Visual Studio Code 1.66.2.
+2022.05.02 19:07:10 INFO  time: initialize in 1.13s
+2022.05.02 19:07:10 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.05.02 19:07:10 INFO  Attempting to connect to the build server...
+2022.05.02 19:07:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/nathanhuh/Documents/Personal Projects/scalaNode/.metals/bsp.trace.json or /Users/nathanhuh/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.05.02 19:07:10 INFO  Attempting to connect to the build server...
+2022.05.02 19:07:10 INFO  Attempting to connect to the build server...
+2022.05.02 19:07:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/nathanhuh/Documents/Personal Projects/scalaNode/project/project/.metals/bsp.trace.json or /Users/nathanhuh/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.05.02 19:07:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/nathanhuh/Documents/Personal Projects/scalaNode/project/.metals/bsp.trace.json or /Users/nathanhuh/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.05.02 19:07:11 INFO  time: Connected to build server in 0.61s
+2022.05.02 19:07:11 INFO  Connected to Build server: Bloop v1.5.0
+2022.05.02 19:07:14 INFO  running '/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.1.0/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/46/7fwt73k53l5fh4l8ql528q9m0000gn/T/metals15047247756103135784/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2022.05.02 19:07:15 INFO  [info] welcome to sbt 1.6.2 (GraalVM Community Java 17.0.3)
+2022.05.02 19:07:16 INFO  time: indexed workspace in 4.83s
+2022.05.02 19:07:15 INFO  [info] loading settings for project scalanode-build-build-build from metals.sbt ...
+2022.05.02 19:07:17 INFO  [info] loading project definition from /Users/nathanhuh/Documents/Personal Projects/scalaNode/project/project/project
+2022.05.02 19:07:17 INFO  [info] loading settings for project scalanode-build-build from metals.sbt ...
+2022.05.02 19:07:17 INFO  [info] loading project definition from /Users/nathanhuh/Documents/Personal Projects/scalaNode/project/project
+2022.05.02 19:07:18 INFO  [success] Generated .bloop/scalanode-build-build.json
+2022.05.02 19:07:18 INFO  [success] Total time: 1 s, completed May 2, 2022, 7:07:18 PM
+2022.05.02 19:07:18 INFO  [info] loading settings for project scalanode-build from metals.sbt,plugins.sbt ...
+2022.05.02 19:07:18 INFO  [info] loading project definition from /Users/nathanhuh/Documents/Personal Projects/scalaNode/project
+2022.05.02 19:07:18 INFO  [success] Generated .bloop/scalanode-build.json
+2022.05.02 19:07:18 INFO  [success] Total time: 0 s, completed May 2, 2022, 7:07:19 PM
+2022.05.02 19:07:20 INFO  [info] loading settings for project scalanode from build.sbt ...
+2022.05.02 19:07:20 INFO  [info] set current project to Scala.js Tutorial (in build file:/Users/nathanhuh/Documents/Personal%20Projects/scalaNode/)
+2022.05.02 19:07:20 INFO  [success] Generated .bloop/scalanode.json
+2022.05.02 19:07:20 INFO  [success] Generated .bloop/scalanode-test.json
+2022.05.02 19:07:20 INFO  [success] Total time: 0 s, completed May 2, 2022, 7:07:20 PM
+2022.05.02 19:07:20 INFO  time: ran 'sbt bloopInstall' in 6.8s
+2022.05.02 19:07:20 INFO  Disconnecting from Bloop session...
+2022.05.02 19:07:20 INFO  Shut down connection with build server.
+2022.05.02 19:07:20 INFO  Shut down connection with build server.
+2022.05.02 19:07:20 INFO  Shut down connection with build server.
+2022.05.02 19:07:20 INFO  Attempting to connect to the build server...
+2022.05.02 19:07:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/nathanhuh/Documents/Personal Projects/scalaNode/.metals/bsp.trace.json or /Users/nathanhuh/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.05.02 19:07:20 INFO  Attempting to connect to the build server...
+2022.05.02 19:07:20 INFO  Attempting to connect to the build server...
+2022.05.02 19:07:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/nathanhuh/Documents/Personal Projects/scalaNode/project/project/.metals/bsp.trace.json or /Users/nathanhuh/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.05.02 19:07:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/nathanhuh/Documents/Personal Projects/scalaNode/project/.metals/bsp.trace.json or /Users/nathanhuh/Library/Caches/org.scalameta.metals/bsp.trace.json
+2022.05.02 19:07:21 INFO  time: Connected to build server in 78ms
+2022.05.02 19:07:21 INFO  Connected to Build server: Bloop v1.5.0
+2022.05.02 19:07:22 INFO  time: indexed workspace in 1.27s
+May 02, 2022 7:13:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

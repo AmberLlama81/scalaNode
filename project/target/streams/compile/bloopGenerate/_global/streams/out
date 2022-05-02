@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0m[scalanode-build] Classpath dependencies List()[0m
-[0m[[0m[0mdebug[0m] [0m[0m[scalanode-build] Dependencies from configurations List()[0m
-[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'scalanode-build' to '/Users/nathanhuh/Documents/scalaNode/project/.bloop/scalanode-build.json'[0m
-[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/scalanode-build.json[0m
+[debug] [scalanode-build] Classpath dependencies List()
+[debug] [scalanode-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'scalanode-build' to '/Users/nathanhuh/Documents/Personal Projects/scalaNode/project/.bloop/scalanode-build.json'
+[success] Generated .bloop/scalanode-build.json

@@ -1,4 +1,4 @@
 [debug] [scalanode-test] Classpath dependencies List()
 [debug] [scalanode-test] Dependencies from configurations List(scalanode)
-[debug] Bloop wrote the configuration of project 'scalanode-test' to '/Users/nathanhuh/Documents/scalaNode/.bloop/scalanode-test.json'
+[debug] Bloop wrote the configuration of project 'scalanode-test' to '/Users/nathanhuh/Documents/Personal Projects/scalaNode/.bloop/scalanode-test.json'
 [success] Generated .bloop/scalanode-test.json
