@@ -220,7 +220,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.1.0/Contents/Home",
+                "home": "/opt/homebrew/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home",
                 "options": [
                     "-Duser.dir=/Users/nathanhuh/Documents/Personal Projects/scalaNode/project"
                 ]

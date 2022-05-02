@@ -1,0 +1,31 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(fastOptJS/webpack, Some(230a5bca-78e9-41d6-a50a-071a77775396), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / fastOptJS / webpack[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/nathanhuh/Documents/Personal Projects/scalaNode/target/scala-3.1.2/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /Users/nathanhuh/Documents/Personal Projects/scalaNode/target/scala-3.1.2/scala-js-tutorial-fastopt[0m
+[0m[[0m[0minfo[0m] [0m[0mWriting scalajs.webpack.config.js[0m
+[0m[[0m[0minfo[0m] [0m[0mBundling the application with its NPM dependencies[0m
+[0m[[0m[33mwarn[0m] [0m[0mconfiguration[0m
+[0m[[0m[33mwarn[0m] [0m[0mThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.[0m
+[0m[[0m[33mwarn[0m] [0m[0mYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/[0m
+[0m[[0m[33mwarn[0m] [0m[0masset size limit: The following asset(s) exceed the recommended size limit (244 KiB).[0m
+[0m[[0m[33mwarn[0m] [0m[0mThis can impact web performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mAssets: [0m
+[0m[[0m[33mwarn[0m] [0m[0m  scala-js-tutorial-fastopt-bundle.js (664 KiB)[0m
+[0m[[0m[33mwarn[0m] [0m[0mentrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mEntrypoints:[0m
+[0m[[0m[33mwarn[0m] [0m[0m  scala-js-tutorial-fastopt (664 KiB)[0m
+[0m[[0m[33mwarn[0m] [0m[0m      scala-js-tutorial-fastopt-bundle.js[0m
+[0m[[0m[33mwarn[0m] [0m[0mwebpack performance recommendations: [0m
+[0m[[0m[33mwarn[0m] [0m[0mYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.[0m
+[0m[[0m[33mwarn[0m] [0m[0mFor more info visit https://webpack.js.org/guides/code-splitting/[0m
+[0m[[0m[0minfo[0m] [0m[0mVersion: 4.32.2[0m
+[0m[[0m[0minfo[0m] [0m[0mHash: 8ea5351cdd46084e768b[0m
+[0m[[0m[0minfo[0m] [0m[0mTime: 1833ms[0m
+[0m[[0m[0minfo[0m] [0m[0mPath: /Users/nathanhuh/Documents/Personal Projects/scalaNode/target/scala-3.1.2/scalajs-bundler/main[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt at 2022-05-02T20:17:52.230782[0m
+[0m[[0m[0minfo[0m] [0m[0m                              Asset     Size                                    Chunks[0m
+[0m[[0m[0minfo[0m] [0m[0mscala-js-tutorial-fastopt-bundle.js   679937   [emitted]   [scala-js-tutorial-fastopt][0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 32 -- invalidated: 13 -- trees read: 13[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 3 s, completed May 2, 2022, 8:17:52 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

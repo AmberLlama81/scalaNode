@@ -69,6 +69,7 @@ object Demo1:
             .renderBackend[TableBackend]
             .build
 
+    /*
     def main(as: Array[String]): Unit = 
         println("Hello, World!")
         /*
@@ -79,3 +80,4 @@ object Demo1:
         */
         MTrack().renderIntoDOM(document.getElementById("msg"))
         Table().renderIntoDOM(document.getElementById("msg"))
+    */

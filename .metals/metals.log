@@ -7674,3 +7674,1154 @@ INFO: Unsupported notification method: $/setTrace
 2022.05.02 19:07:22 INFO  time: indexed workspace in 1.27s
 May 02, 2022 7:13:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2022.05.02 19:16:39 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:16:39 INFO  time: compiled scalanode in 0.35s
+2022.05.02 19:16:48 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:16:48 INFO  time: compiled scalanode in 34ms
+May 02, 2022 7:16:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..1]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.lineLength$1(Position.scala:57)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:60)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+May 02, 2022 7:16:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 40
+May 02, 2022 7:16:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 2 is not a valid line number, allowed [0..1]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+May 02, 2022 7:17:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 6 is not a valid line number, allowed [0..1]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+May 02, 2022 7:17:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 5 is not a valid line number, allowed [0..1]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+2022.05.02 19:17:15 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:17:15 INFO  time: compiled scalanode in 94ms
+2022.05.02 19:22:40 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:22:40 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:23:00 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:23:00 INFO  time: compiled scalanode in 0.11s
+2022.05.02 19:28:05 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:28:05 INFO  time: compiled scalanode in 97ms
+2022.05.02 19:29:45 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:29:45 INFO  time: compiled scalanode in 0.33s
+2022.05.02 19:32:02 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:32:02 INFO  time: compiled scalanode in 0.35s
+2022.05.02 19:33:12 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:33:12 INFO  time: compiled scalanode in 0.25s
+2022.05.02 19:34:52 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:34:52 INFO  time: compiled scalanode in 0.11s
+2022.05.02 19:37:23 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:37:23 INFO  time: compiled scalanode in 0.11s
+2022.05.02 19:37:27 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:37:27 INFO  time: compiled scalanode in 0.23s
+2022.05.02 19:39:04 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:39:04 INFO  time: compiled scalanode in 0.23s
+2022.05.02 19:39:19 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:39:19 INFO  time: compiled scalanode in 0.23s
+2022.05.02 19:40:50 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:40:50 INFO  time: compiled scalanode in 0.43s
+2022.05.02 19:41:51 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:41:51 INFO  time: compiled scalanode in 0.52s
+2022.05.02 19:41:57 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:41:57 INFO  time: compiled scalanode in 0.39s
+2022.05.02 19:41:59 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:41:59 INFO  time: compiled scalanode in 0.42s
+2022.05.02 19:42:13 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:42:13 INFO  time: compiled scalanode in 0.13s
+2022.05.02 19:42:32 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:42:32 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:42:52 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:42:52 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:43:09 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:43:09 INFO  time: compiled scalanode in 0.48s
+2022.05.02 19:43:15 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:41:40: stale bloop error: Found:    ("50px" : String)
+Required: Int
+
+One of the following imports might make progress towards fixing the problem:
+
+  import japgolly.scalajs.react.vdom.Implicits.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.PackageBase.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.all.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.html_<^.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.svg_<^.vdomNodeFromRawReactNode
+
+
+                .initialState(State(0, "50px", "50px"))
+                                       ^^^^^^
+2022.05.02 19:43:15 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:41:48: stale bloop error: Found:    ("50px" : String)
+Required: Int
+
+One of the following imports might make progress towards fixing the problem:
+
+  import japgolly.scalajs.react.vdom.Implicits.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.PackageBase.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.all.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.html_<^.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.svg_<^.vdomNodeFromRawReactNode
+
+
+                .initialState(State(0, "50px", "50px"))
+                                               ^^^^^^
+2022.05.02 19:43:15 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:41:40: stale bloop error: Found:    ("50px" : String)
+Required: Int
+
+One of the following imports might make progress towards fixing the problem:
+
+  import japgolly.scalajs.react.vdom.Implicits.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.PackageBase.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.all.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.html_<^.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.svg_<^.vdomNodeFromRawReactNode
+
+
+                .initialState(State(0, "50px", "50px"))
+                                       ^^^^^^
+2022.05.02 19:43:15 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:41:48: stale bloop error: Found:    ("50px" : String)
+Required: Int
+
+One of the following imports might make progress towards fixing the problem:
+
+  import japgolly.scalajs.react.vdom.Implicits.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.PackageBase.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.all.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.html_<^.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.svg_<^.vdomNodeFromRawReactNode
+
+
+                .initialState(State(0, "50px", "50px"))
+                                               ^^^^^^
+2022.05.02 19:43:18 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:41:40: stale bloop error: Found:    ("50px" : String)
+Required: Int
+
+One of the following imports might make progress towards fixing the problem:
+
+  import japgolly.scalajs.react.vdom.Implicits.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.PackageBase.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.all.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.html_<^.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.svg_<^.vdomNodeFromRawReactNode
+
+
+                .initialState(State(0, "50px", "50px"))
+                                       ^^^^^^
+2022.05.02 19:43:18 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:41:48: stale bloop error: Found:    ("50px" : String)
+Required: Int
+
+One of the following imports might make progress towards fixing the problem:
+
+  import japgolly.scalajs.react.vdom.Implicits.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.PackageBase.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.all.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.html_<^.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.svg_<^.vdomNodeFromRawReactNode
+
+
+                .initialState(State(0, "50px", "50px"))
+                                               ^^^^^^
+2022.05.02 19:43:18 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:41:40: stale bloop error: Found:    ("50px" : String)
+Required: Int
+
+One of the following imports might make progress towards fixing the problem:
+
+  import japgolly.scalajs.react.vdom.Implicits.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.PackageBase.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.all.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.html_<^.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.svg_<^.vdomNodeFromRawReactNode
+
+
+                .initialState(State(0, "50px", "50px"))
+                                       ^^^^^^
+2022.05.02 19:43:18 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:41:48: stale bloop error: Found:    ("50px" : String)
+Required: Int
+
+One of the following imports might make progress towards fixing the problem:
+
+  import japgolly.scalajs.react.vdom.Implicits.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.PackageBase.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.all.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.html_<^.vdomNodeFromRawReactNode
+  import japgolly.scalajs.react.vdom.svg_<^.vdomNodeFromRawReactNode
+
+
+                .initialState(State(0, "50px", "50px"))
+                                               ^^^^^^
+2022.05.02 19:43:19 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:43:19 INFO  time: compiled scalanode in 0.28s
+2022.05.02 19:44:22 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:44:22 INFO  time: compiled scalanode in 0.56s
+2022.05.02 19:44:28 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:44:28 INFO  time: compiled scalanode in 0.25s
+2022.05.02 19:45:22 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:45:22 INFO  time: compiled scalanode in 0.43s
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:34 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:37 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:38 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:38 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:38 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:38 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:42 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:42 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:42 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:42 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:42 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:42 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:42 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:42 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:45 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:45 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:45 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:45 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:45 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:45 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:45 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:31: stale bloop error: parameter s does not take parameters
+                    ^.left := s{$"(s.x)px"},
+                              ^
+2022.05.02 19:45:45 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:32:33: stale bloop error: value  is not a member of StringContext
+                    ^.left := s{$"(s.x)px"},
+                                ^^^^^^^^^^
+2022.05.02 19:45:49 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:45:49 INFO  time: compiled scalanode in 0.4s
+2022.05.02 19:45:52 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:52 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:52 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:52 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:58 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:58 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:45:58 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:30: stale bloop error: parameter s does not take parameters
+                    ^.top := s{$"(s.y)px"},
+                             ^
+2022.05.02 19:45:58 INFO  file:///Users/nathanhuh/Documents/Personal%20Projects/scalaNode/src/main/scala/Demo2.scala:31:32: stale bloop error: value  is not a member of StringContext
+                    ^.top := s{$"(s.y)px"},
+                               ^^^^^^^^^^
+2022.05.02 19:46:00 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:46:00 INFO  time: compiled scalanode in 0.24s
+2022.05.02 19:47:06 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:47:06 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:47:13 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:47:13 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:47:22 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:47:22 INFO  time: compiled scalanode in 0.23s
+2022.05.02 19:48:16 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:48:16 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:48:50 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:48:50 INFO  time: compiled scalanode in 0.37s
+2022.05.02 19:49:47 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:49:47 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:50:08 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:50:08 INFO  time: compiled scalanode in 0.36s
+2022.05.02 19:50:29 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:50:29 INFO  time: compiled scalanode in 0.35s
+2022.05.02 19:50:57 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:50:57 INFO  time: compiled scalanode in 0.13s
+2022.05.02 19:51:34 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:51:34 INFO  time: compiled scalanode in 0.13s
+2022.05.02 19:51:38 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:51:38 INFO  time: compiled scalanode in 0.11s
+2022.05.02 19:51:48 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:51:48 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:52:22 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:52:22 INFO  time: compiled scalanode in 0.13s
+2022.05.02 19:52:37 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:52:37 INFO  time: compiled scalanode in 0.13s
+2022.05.02 19:52:54 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:52:54 INFO  time: compiled scalanode in 0.11s
+2022.05.02 19:53:02 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:53:02 INFO  time: compiled scalanode in 0.11s
+2022.05.02 19:53:08 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:53:08 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:53:10 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:53:10 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:53:13 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:53:13 INFO  time: compiled scalanode in 0.12s
+2022.05.02 19:53:19 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:53:19 INFO  time: compiled scalanode in 0.23s
+2022.05.02 19:54:38 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:54:38 INFO  time: compiled scalanode in 0.24s
+2022.05.02 19:56:39 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:56:39 INFO  time: compiled scalanode in 33ms
+Exception in thread "pool-5-thread-1" java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:662)
+	at scala.collection.immutable.Nil$.head(List.scala:661)
+	at dotty.tools.dotc.core.TypeOps$.intersect$1(TypeOps.scala:215)
+	at dotty.tools.dotc.core.TypeOps$.$anonfun$3(TypeOps.scala:348)
+	at dotty.tools.dotc.core.Types$Type.mapReduceOr(Types.scala:479)
+	at dotty.tools.dotc.core.TypeOps$.approximateOr$1(TypeOps.scala:348)
+	at dotty.tools.dotc.core.TypeOps$.orDominator(TypeOps.scala:362)
+	at dotty.tools.dotc.core.Types$OrType.join(Types.scala:3251)
+	at dotty.tools.dotc.core.Types$Type.goOr$1(Types.scala:862)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:722)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:878)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:669)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:653)
+	at dotty.tools.dotc.typer.ProtoTypes$SelectionProto.isMatchedBy(ProtoTypes.scala:187)
+	at dotty.tools.dotc.core.TypeComparer.isMatchedByProto(TypeComparer.scala:1879)
+	at dotty.tools.dotc.core.TypeComparer.firstTry$1(TypeComparer.scala:309)
+	at dotty.tools.dotc.core.TypeComparer.recur(TypeComparer.scala:1309)
+	at dotty.tools.dotc.core.TypeComparer.isSubType(TypeComparer.scala:189)
+	at dotty.tools.dotc.core.TypeComparer.isSubType(TypeComparer.scala:199)
+	at dotty.tools.dotc.core.TypeComparer.topLevelSubType(TypeComparer.scala:126)
+	at dotty.tools.dotc.core.TypeComparer.testSubType(TypeComparer.scala:142)
+	at dotty.tools.dotc.core.TypeComparer$.testSubType(TypeComparer.scala:2724)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgsOther$1(Typer.scala:3667)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgs$1(Typer.scala:3764)
+	at dotty.tools.dotc.typer.Typer.adapt1(Typer.scala:3976)
+	at dotty.tools.dotc.typer.Typer.adapt(Typer.scala:3306)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Typer.typeSelectOnTerm$1(Typer.scala:647)
+	at dotty.tools.dotc.typer.Typer.typedSelect(Typer.scala:697)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2779)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:885)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1027)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:119)
+	at dotty.tools.dotc.typer.Typer.typedInfixOp(Typer.scala:2695)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2848)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2990)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedBlockStats(Typer.scala:1069)
+	at dotty.tools.dotc.typer.Typer.typedBlock(Typer.scala:1073)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2817)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.$anonfun$7(ProtoTypes.scala:462)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.cacheTypedArg(ProtoTypes.scala:386)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.typedArg(ProtoTypes.scala:463)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.typedArg(Applications.scala:853)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.typedArg(Applications.scala:853)
+	at dotty.tools.dotc.typer.Applications$Application.addTyped$1(Applications.scala:544)
+	at dotty.tools.dotc.typer.Applications$Application.matchArgs(Applications.scala:609)
+	at dotty.tools.dotc.typer.Applications$Application.init(Applications.scala:447)
+	at dotty.tools.dotc.typer.Applications$TypedApply.<init>(Applications.scala:735)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.<init>(Applications.scala:852)
+	at dotty.tools.dotc.typer.Applications.ApplyTo(Applications.scala:1052)
+	at dotty.tools.dotc.typer.Applications.ApplyTo$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.ApplyTo(Typer.scala:119)
+	at dotty.tools.dotc.typer.Applications.simpleApply$1(Applications.scala:898)
+	at dotty.tools.dotc.typer.Applications.realApply$1$$anonfun$3(Applications.scala:978)
+	at dotty.tools.dotc.typer.Typer.tryEither(Typer.scala:3081)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:989)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1027)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:119)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2809)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr$$anonfun$1(Namer.scala:1473)
+	at dotty.tools.dotc.typer.Namer.typedAhead(Namer.scala:1463)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr(Namer.scala:1473)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1$$anonfun$1(Namer.scala:1710)
+	at dotty.tools.dotc.typer.PrepareInlineable$.dropInlineIfError(PrepareInlineable.scala:238)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1(Namer.scala:1710)
+	at dotty.tools.dotc.typer.Namer.rhsType$1(Namer.scala:1718)
+	at dotty.tools.dotc.typer.Namer.cookedRhsType$1(Namer.scala:1736)
+	at dotty.tools.dotc.typer.Namer.lhsType$1(Namer.scala:1737)
+	at dotty.tools.dotc.typer.Namer.inferredResultType(Namer.scala:1748)
+	at dotty.tools.dotc.typer.Namer.inferredType$1(Namer.scala:1512)
+	at dotty.tools.dotc.typer.Namer.valOrDefDefSig(Namer.scala:1519)
+	at dotty.tools.dotc.typer.Namer.defDefSig(Namer.scala:1588)
+	at dotty.tools.dotc.typer.Namer$Completer.typeSig(Namer.scala:782)
+	at dotty.tools.dotc.typer.Namer$Completer.completeInCreationContext(Namer.scala:914)
+	at dotty.tools.dotc.typer.Namer$Completer.complete(Namer.scala:806)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.completeFrom(SymDenotations.scala:168)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:188)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:190)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.ensureCompleted(SymDenotations.scala:370)
+	at dotty.tools.dotc.typer.Typer.retrieveSym(Typer.scala:2751)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2776)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:2454)
+	at dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:2797)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2801)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:2454)
+	at dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:2797)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2801)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedPackageDef(Typer.scala:2581)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2842)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck$$anonfun$1(TyperPhase.scala:47)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:411)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck(TyperPhase.scala:54)
+	at dotty.tools.dotc.typer.TyperPhase.runOn$$anonfun$3(TyperPhase.scala:88)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.typer.TyperPhase.runOn(TyperPhase.scala:88)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:259)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1328)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:270)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:278)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:287)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:220)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:163)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:35)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:208)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "pool-5-thread-2" java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:662)
+	at scala.collection.immutable.Nil$.head(List.scala:661)
+	at dotty.tools.dotc.core.TypeOps$.intersect$1(TypeOps.scala:215)
+	at dotty.tools.dotc.core.TypeOps$.$anonfun$3(TypeOps.scala:348)
+	at dotty.tools.dotc.core.Types$Type.mapReduceOr(Types.scala:479)
+	at dotty.tools.dotc.core.TypeOps$.approximateOr$1(TypeOps.scala:348)
+	at dotty.tools.dotc.core.TypeOps$.orDominator(TypeOps.scala:362)
+	at dotty.tools.dotc.core.Types$OrType.join(Types.scala:3251)
+	at dotty.tools.dotc.core.Types$Type.goOr$1(Types.scala:862)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:722)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:878)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:669)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:653)
+	at dotty.tools.dotc.typer.ProtoTypes$SelectionProto.isMatchedBy(ProtoTypes.scala:187)
+	at dotty.tools.dotc.core.TypeComparer.isMatchedByProto(TypeComparer.scala:1879)
+	at dotty.tools.dotc.core.TypeComparer.firstTry$1(TypeComparer.scala:309)
+	at dotty.tools.dotc.core.TypeComparer.recur(TypeComparer.scala:1309)
+	at dotty.tools.dotc.core.TypeComparer.isSubType(TypeComparer.scala:189)
+	at dotty.tools.dotc.core.TypeComparer.isSubType(TypeComparer.scala:199)
+	at dotty.tools.dotc.core.TypeComparer.topLevelSubType(TypeComparer.scala:126)
+	at dotty.tools.dotc.core.TypeComparer.testSubType(TypeComparer.scala:142)
+	at dotty.tools.dotc.core.TypeComparer$.testSubType(TypeComparer.scala:2724)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgsOther$1(Typer.scala:3667)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgs$1(Typer.scala:3764)
+	at dotty.tools.dotc.typer.Typer.adapt1(Typer.scala:3976)
+	at dotty.tools.dotc.typer.Typer.adapt(Typer.scala:3306)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Typer.typeSelectOnTerm$1(Typer.scala:647)
+	at dotty.tools.dotc.typer.Typer.typedSelect(Typer.scala:697)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2779)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:885)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1027)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:119)
+	at dotty.tools.dotc.typer.Typer.typedInfixOp(Typer.scala:2695)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2848)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2990)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedBlockStats(Typer.scala:1069)
+	at dotty.tools.dotc.typer.Typer.typedBlock(Typer.scala:1073)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2817)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.$anonfun$7(ProtoTypes.scala:462)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.cacheTypedArg(ProtoTypes.scala:386)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.typedArg(ProtoTypes.scala:463)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.typedArg(Applications.scala:853)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.typedArg(Applications.scala:853)
+	at dotty.tools.dotc.typer.Applications$Application.addTyped$1(Applications.scala:544)
+	at dotty.tools.dotc.typer.Applications$Application.matchArgs(Applications.scala:609)
+	at dotty.tools.dotc.typer.Applications$Application.init(Applications.scala:447)
+	at dotty.tools.dotc.typer.Applications$TypedApply.<init>(Applications.scala:735)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.<init>(Applications.scala:852)
+	at dotty.tools.dotc.typer.Applications.ApplyTo(Applications.scala:1052)
+	at dotty.tools.dotc.typer.Applications.ApplyTo$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.ApplyTo(Typer.scala:119)
+	at dotty.tools.dotc.typer.Applications.simpleApply$1(Applications.scala:898)
+	at dotty.tools.dotc.typer.Applications.realApply$1$$anonfun$3(Applications.scala:978)
+	at dotty.tools.dotc.typer.Typer.tryEither(Typer.scala:3081)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:989)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1027)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:119)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2809)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr$$anonfun$1(Namer.scala:1473)
+	at dotty.tools.dotc.typer.Namer.typedAhead(Namer.scala:1463)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr(Namer.scala:1473)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1$$anonfun$1(Namer.scala:1710)
+	at dotty.tools.dotc.typer.PrepareInlineable$.dropInlineIfError(PrepareInlineable.scala:238)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1(Namer.scala:1710)
+	at dotty.tools.dotc.typer.Namer.rhsType$1(Namer.scala:1718)
+	at dotty.tools.dotc.typer.Namer.cookedRhsType$1(Namer.scala:1736)
+	at dotty.tools.dotc.typer.Namer.lhsType$1(Namer.scala:1737)
+	at dotty.tools.dotc.typer.Namer.inferredResultType(Namer.scala:1748)
+	at dotty.tools.dotc.typer.Namer.inferredType$1(Namer.scala:1512)
+	at dotty.tools.dotc.typer.Namer.valOrDefDefSig(Namer.scala:1519)
+	at dotty.tools.dotc.typer.Namer.defDefSig(Namer.scala:1588)
+	at dotty.tools.dotc.typer.Namer$Completer.typeSig(Namer.scala:782)
+	at dotty.tools.dotc.typer.Namer$Completer.completeInCreationContext(Namer.scala:914)
+	at dotty.tools.dotc.typer.Namer$Completer.complete(Namer.scala:806)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.completeFrom(SymDenotations.scala:168)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:188)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:190)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.ensureCompleted(SymDenotations.scala:370)
+	at dotty.tools.dotc.typer.Typer.retrieveSym(Typer.scala:2751)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2776)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:2454)
+	at dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:2797)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2801)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:2454)
+	at dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:2797)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2801)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedPackageDef(Typer.scala:2581)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2842)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck$$anonfun$1(TyperPhase.scala:47)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:411)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck(TyperPhase.scala:54)
+	at dotty.tools.dotc.typer.TyperPhase.runOn$$anonfun$3(TyperPhase.scala:88)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.typer.TyperPhase.runOn(TyperPhase.scala:88)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:259)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1328)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:270)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:278)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:287)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:220)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:163)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:35)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:208)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "pool-5-thread-3" java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:662)
+	at scala.collection.immutable.Nil$.head(List.scala:661)
+	at dotty.tools.dotc.core.TypeOps$.intersect$1(TypeOps.scala:215)
+	at dotty.tools.dotc.core.TypeOps$.$anonfun$3(TypeOps.scala:348)
+	at dotty.tools.dotc.core.Types$Type.mapReduceOr(Types.scala:479)
+	at dotty.tools.dotc.core.TypeOps$.approximateOr$1(TypeOps.scala:348)
+	at dotty.tools.dotc.core.TypeOps$.orDominator(TypeOps.scala:362)
+	at dotty.tools.dotc.core.Types$OrType.join(Types.scala:3251)
+	at dotty.tools.dotc.core.Types$Type.goOr$1(Types.scala:862)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:722)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:878)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:669)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:653)
+	at dotty.tools.dotc.typer.ProtoTypes$SelectionProto.isMatchedBy(ProtoTypes.scala:187)
+	at dotty.tools.dotc.core.TypeComparer.isMatchedByProto(TypeComparer.scala:1879)
+	at dotty.tools.dotc.core.TypeComparer.firstTry$1(TypeComparer.scala:309)
+	at dotty.tools.dotc.core.TypeComparer.recur(TypeComparer.scala:1309)
+	at dotty.tools.dotc.core.TypeComparer.isSubType(TypeComparer.scala:189)
+	at dotty.tools.dotc.core.TypeComparer.isSubType(TypeComparer.scala:199)
+	at dotty.tools.dotc.core.TypeComparer.topLevelSubType(TypeComparer.scala:126)
+	at dotty.tools.dotc.core.TypeComparer.testSubType(TypeComparer.scala:142)
+	at dotty.tools.dotc.core.TypeComparer$.testSubType(TypeComparer.scala:2724)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgsOther$1(Typer.scala:3667)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgs$1(Typer.scala:3764)
+	at dotty.tools.dotc.typer.Typer.adapt1(Typer.scala:3976)
+	at dotty.tools.dotc.typer.Typer.adapt(Typer.scala:3306)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Typer.typeSelectOnTerm$1(Typer.scala:647)
+	at dotty.tools.dotc.typer.Typer.typedSelect(Typer.scala:697)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2779)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:885)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1027)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:119)
+	at dotty.tools.dotc.typer.Typer.typedInfixOp(Typer.scala:2695)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2848)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2990)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedBlockStats(Typer.scala:1069)
+	at dotty.tools.dotc.typer.Typer.typedBlock(Typer.scala:1073)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2817)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.$anonfun$7(ProtoTypes.scala:462)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.cacheTypedArg(ProtoTypes.scala:386)
+	at dotty.tools.dotc.typer.ProtoTypes$FunProto.typedArg(ProtoTypes.scala:463)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.typedArg(Applications.scala:853)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.typedArg(Applications.scala:853)
+	at dotty.tools.dotc.typer.Applications$Application.addTyped$1(Applications.scala:544)
+	at dotty.tools.dotc.typer.Applications$Application.matchArgs(Applications.scala:609)
+	at dotty.tools.dotc.typer.Applications$Application.init(Applications.scala:447)
+	at dotty.tools.dotc.typer.Applications$TypedApply.<init>(Applications.scala:735)
+	at dotty.tools.dotc.typer.Applications$ApplyToUntyped.<init>(Applications.scala:852)
+	at dotty.tools.dotc.typer.Applications.ApplyTo(Applications.scala:1052)
+	at dotty.tools.dotc.typer.Applications.ApplyTo$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.ApplyTo(Typer.scala:119)
+	at dotty.tools.dotc.typer.Applications.simpleApply$1(Applications.scala:898)
+	at dotty.tools.dotc.typer.Applications.realApply$1$$anonfun$3(Applications.scala:978)
+	at dotty.tools.dotc.typer.Typer.tryEither(Typer.scala:3081)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:989)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1027)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:317)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:119)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2809)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr$$anonfun$1(Namer.scala:1473)
+	at dotty.tools.dotc.typer.Namer.typedAhead(Namer.scala:1463)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr(Namer.scala:1473)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1$$anonfun$1(Namer.scala:1710)
+	at dotty.tools.dotc.typer.PrepareInlineable$.dropInlineIfError(PrepareInlineable.scala:238)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1(Namer.scala:1710)
+	at dotty.tools.dotc.typer.Namer.rhsType$1(Namer.scala:1718)
+	at dotty.tools.dotc.typer.Namer.cookedRhsType$1(Namer.scala:1736)
+	at dotty.tools.dotc.typer.Namer.lhsType$1(Namer.scala:1737)
+	at dotty.tools.dotc.typer.Namer.inferredResultType(Namer.scala:1748)
+	at dotty.tools.dotc.typer.Namer.inferredType$1(Namer.scala:1512)
+	at dotty.tools.dotc.typer.Namer.valOrDefDefSig(Namer.scala:1519)
+	at dotty.tools.dotc.typer.Namer.defDefSig(Namer.scala:1588)
+	at dotty.tools.dotc.typer.Namer$Completer.typeSig(Namer.scala:782)
+	at dotty.tools.dotc.typer.Namer$Completer.completeInCreationContext(Namer.scala:914)
+	at dotty.tools.dotc.typer.Namer$Completer.complete(Namer.scala:806)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.completeFrom(SymDenotations.scala:168)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:188)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:190)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.ensureCompleted(SymDenotations.scala:370)
+	at dotty.tools.dotc.typer.Typer.retrieveSym(Typer.scala:2751)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2776)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:2454)
+	at dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:2797)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2801)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:2454)
+	at dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:2797)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:2801)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2871)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:2963)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3013)
+	at dotty.tools.dotc.typer.Typer.typedPackageDef(Typer.scala:2581)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:2842)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:2872)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2937)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:2941)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3057)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck$$anonfun$1(TyperPhase.scala:47)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:411)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck(TyperPhase.scala:54)
+	at dotty.tools.dotc.typer.TyperPhase.runOn$$anonfun$3(TyperPhase.scala:88)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.typer.TyperPhase.runOn(TyperPhase.scala:88)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:259)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1328)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:270)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:278)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:287)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:220)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:163)
+	at scala.meta.internal.pc.completions.CompletionsProvider.completions(CompletionsProvider.scala:39)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.complete$$anonfun$1(ScalaPresentationCompiler.scala:102)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022.05.02 19:56:43 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:56:43 INFO  time: compiled scalanode in 0.25s
+2022.05.02 19:56:53 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:56:53 INFO  time: compiled scalanode in 0.25s
+2022.05.02 19:57:17 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:57:17 INFO  time: compiled scalanode in 0.45s
+2022.05.02 19:57:21 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:57:21 INFO  time: compiled scalanode in 0.45s
+2022.05.02 19:57:25 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:57:25 INFO  time: compiled scalanode in 0.44s
+2022.05.02 19:57:30 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:57:30 INFO  time: compiled scalanode in 0.41s
+2022.05.02 19:57:34 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:57:34 INFO  time: compiled scalanode in 0.4s
+2022.05.02 19:57:42 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:57:42 INFO  time: compiled scalanode in 0.4s
+2022.05.02 19:58:43 INFO  compiling scalanode (1 scala source)
+2022.05.02 19:58:43 INFO  time: compiled scalanode in 0.42s
+2022.05.02 20:00:14 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:00:14 INFO  time: compiled scalanode in 0.41s
+2022.05.02 20:00:46 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:00:46 INFO  time: compiled scalanode in 0.43s
+2022.05.02 20:01:01 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:01:01 INFO  time: compiled scalanode in 0.5s
+2022.05.02 20:01:18 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:01:18 INFO  time: compiled scalanode in 0.47s
+2022.05.02 20:01:22 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:01:22 INFO  time: compiled scalanode in 0.44s
+2022.05.02 20:01:28 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:01:28 INFO  time: compiled scalanode in 0.42s
+2022.05.02 20:01:42 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:01:42 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:01:54 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:01:54 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:02:00 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:02:00 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:02:30 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:02:30 INFO  time: compiled scalanode in 0.11s
+2022.05.02 20:03:33 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:03:33 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:03:42 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:03:42 INFO  time: compiled scalanode in 0.13s
+2022.05.02 20:03:44 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:03:44 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:03:44 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:03:44 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:03:45 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:03:45 INFO  time: compiled scalanode in 0.13s
+2022.05.02 20:03:47 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:03:47 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:03:47 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:03:47 INFO  time: compiled scalanode in 0.13s
+2022.05.02 20:04:16 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:04:16 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:04:25 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:04:25 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:04:34 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:04:34 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:05:17 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:05:17 INFO  time: compiled scalanode in 0.37s
+2022.05.02 20:05:23 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:05:23 INFO  time: compiled scalanode in 0.43s
+2022.05.02 20:05:33 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:05:33 INFO  time: compiled scalanode in 0.52s
+2022.05.02 20:06:27 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:06:27 INFO  time: compiled scalanode in 0.14s
+2022.05.02 20:06:45 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:06:45 INFO  time: compiled scalanode in 0.43s
+May 02, 2022 8:07:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5647
+2022.05.02 20:07:13 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:07:13 INFO  time: compiled scalanode in 0.13s
+2022.05.02 20:07:39 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:07:39 INFO  time: compiled scalanode in 0.56s
+2022.05.02 20:07:53 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:07:53 INFO  time: compiled scalanode in 0.13s
+2022.05.02 20:08:00 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:08:00 INFO  time: compiled scalanode in 0.13s
+2022.05.02 20:08:20 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:08:20 INFO  time: compiled scalanode in 0.12s
+May 02, 2022 8:08:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5908
+2022.05.02 20:08:51 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:08:51 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:08:56 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:08:56 INFO  time: compiled scalanode in 0.3s
+2022.05.02 20:09:02 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:09:02 INFO  time: compiled scalanode in 0.27s
+2022.05.02 20:10:19 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:10:19 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:10:27 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:10:27 INFO  time: compiled scalanode in 65ms
+2022.05.02 20:10:37 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:10:37 INFO  time: compiled scalanode in 0.1s
+2022.05.02 20:10:41 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:10:41 INFO  time: compiled scalanode in 0.1s
+2022.05.02 20:10:51 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:10:51 INFO  time: compiled scalanode in 97ms
+2022.05.02 20:11:03 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:11:03 INFO  time: compiled scalanode in 0.1s
+2022.05.02 20:11:15 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:11:15 INFO  time: compiled scalanode in 0.1s
+2022.05.02 20:11:22 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:11:22 INFO  time: compiled scalanode in 0.36s
+2022.05.02 20:11:30 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:11:30 INFO  time: compiled scalanode in 0.35s
+2022.05.02 20:11:45 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:11:45 INFO  time: compiled scalanode in 0.39s
+2022.05.02 20:13:02 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:13:02 INFO  time: compiled scalanode in 0.27s
+2022.05.02 20:13:09 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:13:09 INFO  time: compiled scalanode in 0.26s
+2022.05.02 20:13:24 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:13:24 INFO  time: compiled scalanode in 0.26s
+2022.05.02 20:15:21 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:15:21 INFO  time: compiled scalanode in 0.41s
+2022.05.02 20:16:02 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:16:02 INFO  time: compiled scalanode in 0.27s
+2022.05.02 20:17:38 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:17:38 INFO  time: compiled scalanode in 0.26s
+2022.05.02 20:19:25 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:19:25 INFO  time: compiled scalanode in 0.12s
+2022.05.02 20:19:28 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:19:28 INFO  time: compiled scalanode in 0.26s
+2022.05.02 20:20:11 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:20:11 INFO  time: compiled scalanode in 0.27s
+2022.05.02 20:20:26 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:20:26 INFO  time: compiled scalanode in 0.18s
+2022.05.02 20:20:36 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:20:36 INFO  time: compiled scalanode in 0.17s
+2022.05.02 20:20:39 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:20:39 INFO  time: compiled scalanode in 0.17s
+2022.05.02 20:20:50 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:20:50 INFO  time: compiled scalanode in 0.26s
+2022.05.02 20:21:02 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:21:02 INFO  time: compiled scalanode in 0.18s
+2022.05.02 20:21:14 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:21:14 INFO  time: compiled scalanode in 0.18s
+2022.05.02 20:21:43 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:21:43 INFO  time: compiled scalanode in 0.25s
+2022.05.02 20:21:54 INFO  compiling scalanode (1 scala source)
+2022.05.02 20:21:54 INFO  time: compiled scalanode in 0.25s
