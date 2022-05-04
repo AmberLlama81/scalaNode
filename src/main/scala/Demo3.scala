@@ -62,5 +62,5 @@ object Demo3:
                 .componentWillUnmount(_.backend.clear)
                 .build
     
-    def main(as: Array[String]): Unit =
-        Timer().renderIntoDOM(document.getElementById("msg"))
+    // def main(as: Array[String]): Unit =
+        // Timer().renderIntoDOM(document.getElementById("msg"))
